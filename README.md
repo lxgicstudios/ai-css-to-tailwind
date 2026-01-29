@@ -1,5 +1,10 @@
 # ai-css-to-tailwind
 
+[![npm version](https://img.shields.io/npm/v/ai-css-to-tailwind.svg)](https://www.npmjs.com/package/ai-css-to-tailwind)
+[![npm downloads](https://img.shields.io/npm/dm/ai-css-to-tailwind.svg)](https://www.npmjs.com/package/ai-css-to-tailwind)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
 Convert any CSS file to Tailwind utility classes. Get a clean mapping of your existing styles to Tailwind equivalents.
 
 ## Install
