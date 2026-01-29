@@ -1,7 +1,7 @@
 {
   "name": "ai-css-to-tailwind",
   "version": "1.0.0",
-  "description": "Convert CSS files to Tailwind utility classes using AI",
+  "description": "AI-powered CSS to Tailwind converter - migrate stylesheets to utility classes with GPT",
   "main": "dist/index.js",
   "bin": {
     "ai-css-to-tailwind": "dist/cli.js"
@@ -9,7 +9,23 @@
   "scripts": {
     "build": "tsc"
   },
-  "keywords": ["css", "tailwind", "convert", "ai", "cli", "utility-classes"],
+  "keywords": [
+    "ai",
+    "openai",
+    "gpt",
+    "css",
+    "tailwind",
+    "tailwindcss",
+    "conversion",
+    "migration",
+    "developer-tools",
+    "cli",
+    "automation",
+    "typescript",
+    "nodejs",
+    "frontend",
+    "styling"
+  ],
   "license": "MIT",
   "dependencies": {
     "commander": "^12.1.0",
