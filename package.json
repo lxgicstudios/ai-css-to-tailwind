@@ -1,6 +1,6 @@
 {
   "name": "ai-css-to-tailwind",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "AI-powered CSS to Tailwind converter - migrate stylesheets to utility classes with GPT",
   "main": "dist/index.js",
   "bin": {

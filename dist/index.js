@@ -40,8 +40,18 @@ exports.convertCssToTailwind = convertCssToTailwind;
 const openai_1 = __importDefault(require("openai"));
 const fs = __importStar(require("fs"));
 const path = __importStar(require("path"));
-const openai = new openai_1.default();
+function getOpenAI() {
+    const apiKey = process.env.OPENAI_API_KEY;
+    if (!apiKey) {
+        console.error("Missing OPENAI_API_KEY environment variable.\n" +
+            "Get one at https://platform.openai.com/api-keys then:\n" +
+            "  export OPENAI_API_KEY=sk-...");
+        process.exit(1);
+    }
+    return new openai_1.default({ apiKey });
+}
 async function convertCssToTailwind(filePath) {
+    const openai = getOpenAI();
     const absPath = path.resolve(filePath);
     const content = fs.readFileSync(absPath, "utf-8");
     const response = await openai.chat.completions.create({
